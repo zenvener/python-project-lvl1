@@ -24,3 +24,4 @@ def start_calc():
             break
     else:
         print(f"Congratulations, {name}!")
+        
