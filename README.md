@@ -20,7 +20,7 @@ Launch any game you want and follow instructions. Break a leg!
 [![asciicast](https://asciinema.org/a/LKdT54Ak6NoBmofjt5fdyfBKy.svg)](https://asciinema.org/a/LKdT54Ak6NoBmofjt5fdyfBKy)
 
 ### brain-calc
-[![asciicast](https://asciinema.org/a/iMvsySKTegdy6K1CW7mx5XMCo.svg)](https://asciinema.org/a/iMvsySKTegdy6K1CW7mx5XMCo)
+[![asciicast](https://asciinema.org/a/qpXoFC6LPZ6CGioAtVXRNOISw.svg)](https://asciinema.org/a/qpXoFC6LPZ6CGioAtVXRNOISw)
 
 ### brain-gcd
 [![asciicast](https://asciinema.org/a/KpHaCEf0J2SBWR8cYJoCP92f9.svg)](https://asciinema.org/a/KpHaCEf0J2SBWR8cYJoCP92f9)
