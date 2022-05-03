@@ -17,7 +17,7 @@ There 5 games available for you. It is up to you what game to play.
 Launch any game you want and follow instructions. Break a leg!
 
 ### brain-even
-[![asciicast](https://asciinema.org/a/5qkgxyUJOcZ9wPR4dOkC7Ai3D.svg)](https://asciinema.org/a/5qkgxyUJOcZ9wPR4dOkC7Ai3D)
+[![asciicast](https://asciinema.org/a/LKdT54Ak6NoBmofjt5fdyfBKy.svg)](https://asciinema.org/a/LKdT54Ak6NoBmofjt5fdyfBKy)
 
 ### brain-calc
 [![asciicast](https://asciinema.org/a/iMvsySKTegdy6K1CW7mx5XMCo.svg)](https://asciinema.org/a/iMvsySKTegdy6K1CW7mx5XMCo)
