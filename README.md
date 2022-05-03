@@ -7,7 +7,7 @@
 
 Welcome to the Brain Games!
 
-There 5 games available for you. It is up to you what game to play.
+There are 5 games available for you. It is up to you what game to play.
 1. "Parity check" (brain-even)
 2. "Calculator" (brain-calc)
 3. "Least common divisor" (brain-gcd)
