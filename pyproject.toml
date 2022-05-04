@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Five brain-games by zenvener"
 authors = ["zenvener <zenxiontrue@gmail.com>"]
+repository = "https://github.com/zenvener/python-project-lvl1"
+classifiers = ["Do what you want and want what you do"]
 packages = [
   { include = "brain_games" },
 ]
@@ -25,5 +27,3 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
-
-
