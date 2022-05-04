@@ -6,4 +6,3 @@ def welcome_user():
     print("Hello, {}!". format(name))
 
 
-
