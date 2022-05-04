@@ -9,6 +9,7 @@ def start_prime():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for i in range(3):
         num = random.randint(2, 100)
+        
         flag = "yes"
         print(f"Question: {num}")
         ans = input("Your answer: ")
