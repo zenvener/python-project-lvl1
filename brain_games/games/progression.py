@@ -24,4 +24,3 @@ def start_progression():
             break
     else:
         print(f"Congratulations, {name}!")
-
