@@ -25,4 +25,3 @@ def start_prime():
             break
     else:
         print(f"Congratulations, {name}!")
-
