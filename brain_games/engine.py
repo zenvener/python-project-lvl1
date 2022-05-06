@@ -2,13 +2,13 @@
 import prompt
 
 
-def play(game):
+def launch(the game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    print(game.GAME_SET)
-    MAX_ROUNDS = 3
-    for _ in range(MAX_ROUNDS):
+    print(game.game_set)
+    maximum_rounds = 3
+    for _ in range(maximum_rounds):
         question, correct_answer = game.get_question_and_solution()
         print(f'Question: {question}')
         user_answer = input('Your answer: ')

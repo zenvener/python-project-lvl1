@@ -1,18 +1,25 @@
 from random import randint
 
-GAME_SET = 'Find the greatest common divisor of given numbers.'
+game_set = "Find the greatest common divisor of given numbers."
 
-def get_correct_answer():
-    number_1 = randint(0, 100)
-    number_2 = randint(0, 100)
-    print('Question: {} {}'.format(number_1, number_2))
-    while number_1 != 0 and number_2 != 0:
-        if number_1 > number_2:
-            number_1 = number_1 % number_2
-        else:
-            number_2 = number_2 % number_1
-    return number_1 + number_2
+def find_gcd(a, b):
+    if a < b:
+        a, b = b, a
+    div_remainder = a % b
+    while div_remainder != 0:
+        a = b
+        b = div_remainder
+        div_remainder = a % b
+    return b
 
 
-def calculate_the_result(correct_answer, user_answer):
-    return str(correct_answer) == user_answer
+def get_question_and_solution():
+    start_num = 1
+    end_num = 20
+    number_1 = randint(start_num, end_num)
+    number_2 = randint(start_num, end_num)
+
+    question = f'{number_1} {number_2}'
+
+    correct_answer = str(find_gcd(number_1, number_2))
+    return(question, correct_answer)
