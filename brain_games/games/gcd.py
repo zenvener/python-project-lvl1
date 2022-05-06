@@ -1,27 +1,18 @@
-import random
-import prompt
+from random import randint
 
+GAME_SET = 'Find the greatest common divisor of given numbers.'
 
-def start_gcd():
-    def low(n1, n2):
-        return n1 if n1 <= n2 else n2
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
-    print('Find the greatest common divisor of given numbers.')
-    for i in range(3):
-        r_ans = 0
-        num1, num2 = random.randint(1, 100), random.randint(1, 100)
-        print(f"Question: {num1} {num2}")
-        ans = int(input("Your answer: "))
-        for i in range(1, low(num1, num2) + 1):
-            if num1 % i == 0 and num2 % i == 0:
-                r_ans = i
-        if r_ans == ans:
-            print("Correct!")
+def get_correct_answer():
+    number_1 = randint(0, 100)
+    number_2 = randint(0, 100)
+    print('Question: {} {}'.format(number_1, number_2))
+    while number_1 != 0 and number_2 != 0:
+        if number_1 > number_2:
+            number_1 = number_1 % number_2
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{r_ans}'.")
-            print(f"Let's try again, {name}!")
-            break
-    else:
-        print(f"Congratulations, {name}!")
+            number_2 = number_2 % number_1
+    return number_1 + number_2
+
+
+def calculate_the_result(correct_answer, user_answer):
+    return str(correct_answer) == user_answer
