@@ -1,26 +1,23 @@
-from operator import add, mul, sub
-import random
-import prompt
+from random import randint, choice
 
 
-def start_calc():
-    token = {1: "+", 2: "*", 3: "-"}
-    d = {1: add, 2: mul, 3: sub}
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
-    print('What is the result of the expression?')
-    for i in range(3):
-        num1, num2 = random.randint(1, 100), random.randint(1, 100)
-        action = random.randint(1, 3)
-        print(f"Question: {num1} {token[action]} {num2}")
-        ans = int(input("Your answer: "))
-        if d[action](num1, num2) == ans:
-            print("Correct!")
-        else:
-            print(f"'{ans}' is wrong answer ;(.", end="")
-            print(f"Correct answer was '{d[action](num1, num2)}'.")
-            print(f"Let's try again, {name}!")
-            break
-    else:
-        print(f"Congratulations, {name}!")
+def get_task_description():
+    return print('What is the result of the expression?')
+
+
+def get_correct_answer():
+    arithmetic_operations = ['+', '-', '*']
+    operator = choice(arithmetic_operations)
+    number_1 = randint(0, 10)
+    number_2 = randint(0, 10)
+    print('Question: {} {} {}'.format(number_1, operator, number_2))
+    if operator == '+':
+        return number_1 + number_2
+    if operator == '-':
+        return number_1 - number_2
+    if operator == '*':
+        return number_1 * number_2
+
+
+def calculate_the_result(correct_answer, user_answer):
+    return str(correct_answer) == user_answer
