@@ -6,7 +6,7 @@ def play(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    print(game.GAME_RULE)
+    print(game.GAME_SET)
     MAX_ROUNDS = 3
     for _ in range(MAX_ROUNDS):
         question, correct_answer = game.get_question_and_solution()
