@@ -17,6 +17,7 @@ There are 5 games available for you. It is up to you what game to play.
 Launch any game you want and follow instructions. Break a leg!
 
 ### brain-even
+Definition of an even number. The player is shown a random number, and they need to answer 'yes' if the number is even, or 'no' if it is odd.
 [![asciicast](https://asciinema.org/a/LKdT54Ak6NoBmofjt5fdyfBKy.svg)](https://asciinema.org/a/LKdT54Ak6NoBmofjt5fdyfBKy)
 
 ### brain-calc
