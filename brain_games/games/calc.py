@@ -4,7 +4,7 @@ from random import randint, choice
 game_set = "What is the result of the expression?"
 
 
-def get_question_and_solution():
+def get_question_and_decision():
     random_num1 = randint(1, 20)
     random_num2 = randint(1, 20)
     operators = ('+', '-', '*')
