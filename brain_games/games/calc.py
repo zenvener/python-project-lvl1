@@ -1,7 +1,7 @@
 from random import randint, choice
 
 
-GAME_SET = 'What is the result of the expression?'
+game_set = "What is the result of the expression?"
 
 
 def get_question_and_solution():
