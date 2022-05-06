@@ -15,7 +15,7 @@ def is_number_prime(a):
     return True
 
 
-def get_question_and_solution():
+def get_question_and_decision():
     question = randint(1, 1000)
     correct_answer = 'yes' if is_number_prime(question) else 'no'
 
