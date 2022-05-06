@@ -1,22 +1,23 @@
 from random import randint, choice
 
 
-Game_rule = 'What is the result of the expression?'
+def get_task_description():
+    return print('What is the result of the expression?')
 
 
-def get_question_and_solution():
-    random_num1 = randint(1, 20)
-    random_num2 = randint(1, 20)
-    operators = ('+', '-', '*')
-    operator = choice(operators)
+def get_correct_answer():
+    arithmetic_operations = ['+', '-', '*']
+    operator = choice(arithmetic_operations)
+    number_1 = randint(0, 10)
+    number_2 = randint(0, 10)
+    print('Question: {} {} {}'.format(number_1, operator, number_2))
     if operator == '+':
-        expression = random_num1 + random_num2
-    elif operator == '-':
-        expression = random_num1 - random_num2
-    elif operator == '*':
-        expression = random_num1 * random_num2
+        return number_1 + number_2
+    if operator == '-':
+        return number_1 - number_2
+    if operator == '*':
+        return number_1 * number_2
 
-    question = f'{random_num1} {operator} {random_num2}'
-    correct_answer = str(expression)
 
-    return (question, correct_answer)
+def calculate_the_result(correct_answer, user_answer):
+    return str(correct_answer) == user_answer
