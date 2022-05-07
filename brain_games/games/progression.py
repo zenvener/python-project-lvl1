@@ -7,7 +7,7 @@ game_set = 'What number is missing in the progression?'
 
 def get_question_and_decision():
     first_number = randint(0, 900)
-    random_index = randint(1, range_length - 1)
+    random_index = randint(1, overall_length - 1)
     scale_step = randint(1, 5)
     overall_length = randint(5, 10)
     
