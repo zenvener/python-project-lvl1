@@ -4,22 +4,22 @@ from random import randint
 
 game_set = 'What number is missing in the progression?'
 
+    START_NUMBER = randint(0, 900)
+    RANGE_LENGTH = randint(5, 10)
+    STEP_RANGE = randint(1, 5)
+    RANDOM_INDEX = randint(1, RANGE_LENGTH - 1)
+
 
 def get_question_and_decision():
-    first_number = randint(0, 900)
-    random_index = randint(1, overall_length - 1)
-    scale_step = randint(1, 5)
-    overall_length = randint(5, 10)
-    
     
 
     progression = list(range(
-        first_number, first_number + overall_length * scale_step, scale_step))
+        START_NUMBER, START_NUMBER + RANGE_LENGTH * STEP_RANGE, STEP_RANGE))
     progression = [str(i) for i in progression]
 
-    correct_answer = progression[random_index]
+    correct_answer = progression[RANDOM_INDEX]
 
-    progression[random_index] = '..'
+    progression[RANDOM_INDEX] = '..'
 
     question = " ".join(progression)
 
