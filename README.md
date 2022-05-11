@@ -1,4 +1,3 @@
-# Hi everyone. This is my first project, dont judge me strictly=). 
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/zenvener/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/zenvener/python-project-lvl1/actions)
