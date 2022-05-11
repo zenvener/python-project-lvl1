@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
 from random import randint
+
 
 game_set = "Find the greatest common divisor of given numbers."
 
@@ -15,11 +15,11 @@ def find_gcd(q, w):
     return w
 
 
-def get_question_and_decision():
-    start_num = 1
-    end_num = 20
-    number_1 = randint(start_num, end_num)
-    number_2 = randint(start_num, end_num)
+def get_question_and_answer():
+    START_NUM = 1
+    END_NUM = 20
+    NUMBER_1 = randint(start_num, end_num)
+    NUMBER_2 = randint(start_num, end_num)
 
     question = f'{number_1} {number_2}'
 

@@ -1,23 +1,22 @@
-#!/usr/bin/env python3
 from random import randint, choice
 
 
 game_set = "What is the result of the expression?"
 
 
-def get_question_and_decision():
-    random_num1 = randint(1, 20)
-    random_num2 = randint(1, 20)
-    operators = ('+', '-', '*')
-    operator = choice(operators)
+def get_question_and_answer():
+    RANDOM_NUM1 = randint(1, 20)
+    RANDOM_NUM2 = randint(1, 20)
+    OPERATORS = ('+', '-', '*')
+    operator = choice(OPERATORS)
     if operator == '+':
-        expression = random_num1 + random_num2
+        expression = RANDOM_NUM1 + RANDOM_NUM2
     elif operator == '-':
-        expression = random_num1 - random_num2
+        expression = RANDOM_NUM1 - RANDOM_NUM2
     elif operator == '*':
-        expression = random_num1 * random_num2
+        expression = RANDOM_NUM1 * RANDOM_NUM2
 
-    question = f'{random_num1} {operator} {random_num2}'
+    question = f'{RANDOM_NUM1} {operator} {RANDOM_NUM2}'
     correct_answer = str(expression)
 
     return (question, correct_answer)

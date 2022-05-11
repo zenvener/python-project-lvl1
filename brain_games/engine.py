@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import prompt
 
 
@@ -7,8 +6,8 @@ def launch(game):
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
     print(game.game_set)
-    maximum_rounds = 3
-    for _ in range(maximum_rounds):
+    MAXIMUM_ROUNDS = 3
+    for _ in range(MAXIMUM_ROUNDS):
         question, correct_answer = game.get_question_and_decision()
         print(f'Question: {question}')
         user_answer = input('Your answer: ')

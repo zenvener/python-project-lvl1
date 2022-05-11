@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
 from random import randint
 
 game_set = 'What number is missing in the progression?'
 
 
-def get_question_and_decision():
+def get_question_and_answer():
     START_NUMBER = randint(0, 900)
     RANGE_LENGTH = randint(5, 10)
     STEP_RANGE = randint(1, 5)
