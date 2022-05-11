@@ -18,10 +18,10 @@ def find_gcd(q, w):
 def get_question_and_answer():
     START_NUM = 1
     END_NUM = 20
-    NUMBER_1 = randint(start_num, end_num)
-    NUMBER_2 = randint(start_num, end_num)
+    NUMBER_1 = randint(START_NUM, END_NUM)
+    NUMBER_2 = randint(START_NUM, END_NUM)
 
-    question = f'{number_1} {number_2}'
+    question = f'{NUMBER_1} {NUMBER_2}'
 
-    correct_answer = str(find_gcd(number_1, number_2))
+    correct_answer = str(find_gcd(NUMBER_1, NUMBER_2))
     return(question, correct_answer)
