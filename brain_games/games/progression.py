@@ -1,6 +1,6 @@
 from random import randint
 
-game_set = 'What number is missing in the progression?'
+GAME_MAIN_QUESTION = 'What number is missing in the progression?'
 
 
 def get_question_and_answer():
